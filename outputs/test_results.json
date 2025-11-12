@@ -1,0 +1,18 @@
+{
+  "underfit": {
+    "test_loss": 5.921478470068935,
+    "test_perplexity": 372.9627206716272
+  },
+  "overfit": {
+    "test_loss": 10.40366229349511,
+    "test_perplexity": 32980.18790017779
+  },
+  "bestfit_lstm": {
+    "test_loss": 8.53537070698847,
+    "test_perplexity": 5091.718661080929
+  },
+  "bestfit_transformer": {
+    "test_loss": 8.283798365682738,
+    "test_perplexity": 3959.2043632192135
+  }
+}

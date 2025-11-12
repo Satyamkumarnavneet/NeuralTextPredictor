@@ -1,0 +1,93 @@
+{
+  "experiments": [
+    {
+      "Experiment": "Underfit",
+      "Model Type": "LSTM",
+      "Parameters": "552,023",
+      "Embed Dim": 32,
+      "Hidden Dim": 64,
+      "Layers": 1,
+      "Dropout": 0.0,
+      "Batch Size": 128,
+      "Epochs Trained": 5,
+      "Final Train Loss": "2.0772",
+      "Final Val Loss": "7.7902",
+      "Best Val Loss": "5.1361",
+      "Final Train PPL": "7.98",
+      "Final Val PPL": "2416.81",
+      "Test Loss": "5.9215",
+      "Test PPL": "372.96",
+      "Train-Val Gap": "5.7130"
+    },
+    {
+      "Experiment": "Overfit",
+      "Model Type": "LSTM",
+      "Parameters": "39,839,543",
+      "Embed Dim": 512,
+      "Hidden Dim": 1024,
+      "Layers": 4,
+      "Dropout": 0.0,
+      "Batch Size": 16,
+      "Epochs Trained": 20,
+      "Final Train Loss": "0.1152",
+      "Final Val Loss": "10.7642",
+      "Best Val Loss": "9.3761",
+      "Final Train PPL": "1.12",
+      "Final Val PPL": "47294.60",
+      "Test Loss": "10.4037",
+      "Test PPL": "32980.19",
+      "Train-Val Gap": "10.6490"
+    },
+    {
+      "Experiment": "Best-Fit (LSTM)",
+      "Model Type": "LSTM",
+      "Parameters": "7,855,671",
+      "Embed Dim": 256,
+      "Hidden Dim": 512,
+      "Layers": 2,
+      "Dropout": 0.3,
+      "Batch Size": 64,
+      "Epochs Trained": 6,
+      "Final Train Loss": "0.3529",
+      "Final Val Loss": "10.0048",
+      "Best Val Loss": "7.3111",
+      "Final Train PPL": "1.42",
+      "Final Val PPL": "22132.37",
+      "Test Loss": "8.5354",
+      "Test PPL": "5091.72",
+      "Train-Val Gap": "9.6519"
+    },
+    {
+      "Experiment": "Best-Fit (Transformer)",
+      "Model Type": "TRANSFORMER",
+      "Parameters": "5,945,143",
+      "Embed Dim": 256,
+      "Hidden Dim": 1024,
+      "Layers": 4,
+      "Dropout": 0.3,
+      "Batch Size": 64,
+      "Epochs Trained": 6,
+      "Final Train Loss": "0.8253",
+      "Final Val Loss": "10.3379",
+      "Best Val Loss": "6.9983",
+      "Final Train PPL": "2.28",
+      "Final Val PPL": "30882.61",
+      "Test Loss": "8.2838",
+      "Test PPL": "3959.20",
+      "Train-Val Gap": "9.5127"
+    }
+  ],
+  "dataset_info": {
+    "total_tokens": 134857,
+    "vocabulary_size": 5431,
+    "train_size": 107885,
+    "val_size": 13485,
+    "test_size": 13487,
+    "sequence_length": 50
+  },
+  "best_model": {
+    "name": "Best-Fit (LSTM)",
+    "test_perplexity": 5091.718661080929,
+    "test_loss": 8.53537070698847
+  }
+}

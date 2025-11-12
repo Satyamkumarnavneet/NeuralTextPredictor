@@ -1,0 +1,5 @@
+Experiment,Model Type,Parameters,Embed Dim,Hidden Dim,Layers,Dropout,Batch Size,Epochs Trained,Final Train Loss,Final Val Loss,Best Val Loss,Final Train PPL,Final Val PPL,Test Loss,Test PPL,Train-Val Gap
+Underfit,LSTM,"552,023",32,64,1,0.0,128,5,2.0772,7.7902,5.1361,7.98,2416.81,5.9215,372.96,5.7130
+Overfit,LSTM,"39,839,543",512,1024,4,0.0,16,20,0.1152,10.7642,9.3761,1.12,47294.60,10.4037,32980.19,10.6490
+Best-Fit (LSTM),LSTM,"7,855,671",256,512,2,0.3,64,6,0.3529,10.0048,7.3111,1.42,22132.37,8.5354,5091.72,9.6519
+Best-Fit (Transformer),TRANSFORMER,"5,945,143",256,1024,4,0.3,64,6,0.8253,10.3379,6.9983,2.28,30882.61,8.2838,3959.20,9.5127
